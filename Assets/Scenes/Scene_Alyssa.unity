@@ -451,9 +451,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2339499586288615448, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 57eb12d473cc7a94cb3239f7e5148f87, type: 2}
     - target: {fileID: 919132149155446097, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
       propertyPath: m_Name
       value: trainCabin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075607213160688380, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0009058872
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -536,11 +544,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.032
+      value: 0.0321
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.62
+      value: -2.63
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
       propertyPath: m_LocalRotation.w
@@ -586,10 +594,22 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.0514
       objectReference: {fileID: 0}
+    - target: {fileID: -2339499586288615448, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 57eb12d473cc7a94cb3239f7e5148f87, type: 2}
     - target: {fileID: 919132149155446097, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
       propertyPath: m_Name
       value: trainCabin
       objectReference: {fileID: 0}
+    - target: {fileID: 2265612908571486494, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee5f540d9b0e5d34b813a31e3ab2319f, type: 2}
+    - target: {fileID: 2883337274338430713, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: ee5f540d9b0e5d34b813a31e3ab2319f, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -6368998857423973539, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
@@ -1135,6 +1155,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2339499586288615448, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 57eb12d473cc7a94cb3239f7e5148f87, type: 2}
     - target: {fileID: 919132149155446097, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
       propertyPath: m_Name
       value: trainCabin (2)
@@ -1229,6 +1253,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.0537
       objectReference: {fileID: 0}
+    - target: {fileID: -2339499586288615448, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 57eb12d473cc7a94cb3239f7e5148f87, type: 2}
     - target: {fileID: 919132149155446097, guid: 03f0d2bcae8884445911d89600b14326, type: 3}
       propertyPath: m_Name
       value: trainCabin (3)
