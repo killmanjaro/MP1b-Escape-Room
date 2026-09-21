@@ -72,6 +72,7 @@ Material:
     - _UseMetallicMap: 0
     - _UseNormalMap: 0
     - _UseRoughnessMap: 0
+    - _XRMotionVectorsPass: 1
     m_Colors:
     - _Color: {r: 0.16037738, g: 0.09600935, b: 0.08245818, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
