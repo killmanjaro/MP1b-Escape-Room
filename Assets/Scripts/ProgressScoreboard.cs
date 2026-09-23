@@ -45,6 +45,8 @@ public class ProgressScoreboard : MonoBehaviour
     // Each lock script calls: ProgressScoreboard.Instance.RegisterLockSolved(this);
     public void RegisterLockSolved(Object source)
     {
+        if (LossTimer.IsOver) return;
+
         if (!solvedLocks.Add(source))
         {
             Debug.Log("Ignored duplicate lock report from " + source.name);

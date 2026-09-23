@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4452
+      value: 1.445
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -77,9 +77,6 @@ PrefabInstance:
       addedObject: {fileID: -7988038737512192797}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -5648882577082441138}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
-      insertIndex: -1
       addedObject: {fileID: -4253519683037142356}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
       insertIndex: -1
@@ -87,6 +84,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1728108089910010395}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 693459116166232457}
   m_SourcePrefab: {fileID: 100100000, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
 --- !u!1 &1519050200987025840 stripped
 GameObject:
@@ -120,29 +120,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
---- !u!136 &-5648882577082441138
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519050200987025840}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Height: 1
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &-4253519683037142356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,3 +280,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83f35d00564e9944680610dd9f750d4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KeyPickup
+--- !u!65 &693459116166232457
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519050200987025840}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.1, y: 0.05, z: 0.1}
+  m_Center: {x: 0, y: 0.04, z: 0}
