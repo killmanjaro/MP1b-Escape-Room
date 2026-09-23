@@ -102,7 +102,7 @@ Material:
     - _Metallic: 0
     - _MetallicStrength: 0
     - _Mode: 0
-    - _NormalScale: 0.99
+    - _NormalScale: 1.06
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessStrength: 1
@@ -112,7 +112,7 @@ Material:
     - _TessMax: 25
     - _TessMin: 10
     - _TessValue: 16
-    - _Tile: 5
+    - _Tile: 1.88
     - _UVSec: 0
     - _ZWrite: 1
     - __dirty: 0
