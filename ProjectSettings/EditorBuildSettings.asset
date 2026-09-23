@@ -14,6 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene_Win.unity
     guid: 121d33682e100d041badef51ffff68b6
+  - enabled: 1
+    path: Assets/Scenes/Scene_Start.unity
+    guid: d4386652de9f3de42b7cb5ffa279f19c
+  - enabled: 1
+    path: Assets/Scenes/Scene_Ethan.unity
+    guid: ba0da497330b09444bd084d4ffd82b4b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 285ce960856801f439732749389a2aaa, type: 2}
