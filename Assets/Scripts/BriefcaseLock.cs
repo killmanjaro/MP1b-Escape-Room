@@ -7,6 +7,8 @@ public class BriefcaseLock : MonoBehaviour
     public Animator briefcaseAnimator;
     public GameObject journalPrefab;
     public Transform journalSpawnPoint;
+    public GameObject binocularsPrefab;
+    public Transform binocularsSpawnPoint;
     private bool isUnlocked = false;
 
     void Update()
@@ -44,6 +46,16 @@ public class BriefcaseLock : MonoBehaviour
         else
         {
             Debug.Log("No journal prefab/spawn point assigned — skipping");
+        }
+
+        if (binocularsPrefab != null && binocularsSpawnPoint != null)
+        {
+            Instantiate(binocularsPrefab, binocularsSpawnPoint.position, binocularsSpawnPoint.rotation);
+            Debug.Log("Binoculars spawned");
+        }
+        else
+        {
+            Debug.Log("No binoculars prefab/spawn point assigned — skipping");
         }
 
         ProgressScoreboard.Instance.RegisterLockSolved();
