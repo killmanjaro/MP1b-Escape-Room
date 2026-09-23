@@ -58,6 +58,6 @@ public class BriefcaseLock : MonoBehaviour
             Debug.Log("No binoculars prefab/spawn point assigned — skipping");
         }
 
-        ProgressScoreboard.Instance.RegisterLockSolved();
+        ProgressScoreboard.Instance.RegisterLockSolved(this);
     }
 }

@@ -45,6 +45,6 @@ public class CompartmentLock : MonoBehaviour
             Debug.Log("No claim tag prefab/spawn point assigned — skipping");
         }
 
-        ProgressScoreboard.Instance.RegisterLockSolved();
+        ProgressScoreboard.Instance.RegisterLockSolved(this);
     }
 }

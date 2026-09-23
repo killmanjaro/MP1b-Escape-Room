@@ -84,6 +84,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2859105788820867354}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1728108089910010395}
   m_SourcePrefab: {fileID: 100100000, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
 --- !u!1 &1519050200987025840 stripped
 GameObject:
@@ -288,3 +291,15 @@ MonoBehaviour:
   pulseSpeed: 1.5
   hoverIntensity: 1
   fadeSpeed: 8
+--- !u!114 &1728108089910010395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519050200987025840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f35d00564e9944680610dd9f750d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPickup

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4945890767913336815}
   - component: {fileID: 8890673340942794320}
   - component: {fileID: 1844053083601208278}
+  - component: {fileID: 6467590614438428127}
   m_Layer: 0
   m_Name: ClaimTag
   m_TagString: Untagged
@@ -312,3 +313,15 @@ MonoBehaviour:
   pulseSpeed: 1.5
   hoverIntensity: 1
   fadeSpeed: 8
+--- !u!114 &6467590614438428127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4896134299133447392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83f35d00564e9944680610dd9f750d4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KeyPickup

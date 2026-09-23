@@ -1,13 +1,7 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
-// XRI 3.x: also add -> using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
-/// <summary>
-/// Grab signifier: "glowing objects can be picked up."
-/// Idle = soft pulsing glow, Hover = bright, Held = glow off.
-/// Add to any object that has an XRGrabInteractable.
-/// </summary>
 [RequireComponent(typeof(XRGrabInteractable))]
 public class GrabGlow : MonoBehaviour
 {
