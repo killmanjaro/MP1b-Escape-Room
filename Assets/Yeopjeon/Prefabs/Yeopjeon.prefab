@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 4661978792321391982}
   - component: {fileID: 7446238312083777956}
   - component: {fileID: 4726838504445654905}
-  - component: {fileID: 8816778137066121756}
-  - component: {fileID: 7378979635026098208}
-  - component: {fileID: 7665965160728460835}
+  - component: {fileID: 5746088110102713673}
+  - component: {fileID: 8359422987690931604}
+  - component: {fileID: 3097522050614636078}
   m_Layer: 0
   m_Name: Yeopjeon
   m_TagString: Untagged
@@ -113,10 +113,10 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -5284070298690745441, guid: 827b5897ea2918c4da44be460009d41e, type: 3}
---- !u!114 &8816778137066121756
+--- !u!114 &5746088110102713673
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,7 +128,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28583b5593f990643a3efe79c9d90c8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Coin
---- !u!54 &7378979635026098208
+  CoinManager: {fileID: 0}
+--- !u!54 &8359422987690931604
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -150,12 +151,12 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 0
+  m_UseGravity: 1
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7665965160728460835
+--- !u!114 &3097522050614636078
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -203,7 +204,7 @@ MonoBehaviour:
   m_SelectEntered:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8816778137066121756}
+      - m_Target: {fileID: 5746088110102713673}
         m_TargetAssemblyTypeName: Coin, Assembly-CSharp
         m_MethodName: CollectCoin
         m_Mode: 0
