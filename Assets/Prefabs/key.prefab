@@ -81,6 +81,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
       insertIndex: -1
       addedObject: {fileID: -4253519683037142356}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2859105788820867354}
   m_SourcePrefab: {fileID: 100100000, guid: 014babb11fcc7854f94f8b4345fd9e1f, type: 3}
 --- !u!1 &1519050200987025840 stripped
 GameObject:
@@ -113,7 +116,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!136 &-5648882577082441138
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -254,7 +257,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_UnparentTransformOnGrab: 1
@@ -267,3 +270,21 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &2859105788820867354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519050200987025840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30404ea5e01f66045becf1323eb4a61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabGlow
+  glowColor: {r: 1, g: 0.85, b: 0.2, a: 1}
+  idleIntensity: 0.3
+  pulseAmount: 0.25
+  pulseSpeed: 1.5
+  hoverIntensity: 1
+  fadeSpeed: 8

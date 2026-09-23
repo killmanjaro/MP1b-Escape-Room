@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 627007240103648862}
   - component: {fileID: 4945890767913336815}
   - component: {fileID: 8890673340942794320}
+  - component: {fileID: 1844053083601208278}
   m_Layer: 0
   m_Name: ClaimTag
   m_TagString: Untagged
@@ -113,7 +114,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 3, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &627007240103648862
 Rigidbody:
@@ -141,7 +142,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!65 &4945890767913336815
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -280,7 +281,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
+  m_ThrowVelocityScale: 1
   m_ThrowAngularVelocityScale: 1
   m_ForceGravityOnDetach: 0
   m_UnparentTransformOnGrab: 1
@@ -293,3 +294,21 @@ MonoBehaviour:
   m_LimitAngularVelocity: 0
   m_MaxLinearVelocityDelta: 10
   m_MaxAngularVelocityDelta: 20
+--- !u!114 &1844053083601208278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4896134299133447392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30404ea5e01f66045becf1323eb4a61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GrabGlow
+  glowColor: {r: 1, g: 0.85, b: 0.2, a: 1}
+  idleIntensity: 0.3
+  pulseAmount: 0.25
+  pulseSpeed: 1.5
+  hoverIntensity: 1
+  fadeSpeed: 8

@@ -9,6 +9,8 @@ public class ProgressScoreboard : MonoBehaviour
     public int totalLocks = 3;
     private int locksSolved = 0;
 
+    public event System.Action<int, int> ProgressChanged;
+
     void Awake()
     {
         Instance = this;
@@ -22,6 +24,7 @@ public class ProgressScoreboard : MonoBehaviour
     public void RegisterLockSolved()
     {
         locksSolved++;
+        ProgressChanged?.Invoke(locksSolved, totalLocks);  
         UpdateDisplay();
         Debug.Log("Lock registered. Total solved: " + locksSolved);
 
@@ -33,6 +36,7 @@ public class ProgressScoreboard : MonoBehaviour
 
     void UpdateDisplay()
     {
-        scoreboardText.text = $"Locks: {locksSolved} / {totalLocks}";
+        if (scoreboardText != null)   
+            scoreboardText.text = $"Locks: {locksSolved} / {totalLocks}";
     }
 }

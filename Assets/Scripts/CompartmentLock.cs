@@ -32,7 +32,7 @@ public class CompartmentLock : MonoBehaviour
         }
         else
         {
-            Debug.Log("No animator assigned — skipping animation");
+            Debug.Log("No animator assigned - skipping animation");
         }
 
         if (claimTagPrefab != null && claimTagSpawnPoint != null)
