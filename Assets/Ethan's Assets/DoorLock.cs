@@ -28,7 +28,9 @@ public class DoorLock : MonoBehaviour
         while (progress < 1f)
         {
             progress += Time.deltaTime * openSpeed;
-            doorHinge.rotation = Quaternion.Slerp(startRotation, targetRotation, progress);
+
+            float easedProgress = Mathf.SmoothStep(0f, 1f, progress);
+            doorHinge.rotation = Quaternion.Slerp(startRotation, targetRotation, easedProgress);
             yield return null;
         }
     }
