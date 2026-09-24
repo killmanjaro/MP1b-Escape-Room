@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene_Alyssa.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene_Brian.unity
     guid: 9689f410bf52e1341ba1d69a1e39b754
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene_Win.unity
     guid: 121d33682e100d041badef51ffff68b6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scene_Start.unity
     guid: d4386652de9f3de42b7cb5ffa279f19c
   - enabled: 1
