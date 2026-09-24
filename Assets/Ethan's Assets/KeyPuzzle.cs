@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class KeypadPuzzle : MonoBehaviour
 {
+
+    public TMP_Text coinText;
+    
     [Header("Puzzle Settings")]
     [Tooltip("The correct code sequence, e.g. 1, 4, 2, 3")]
     [SerializeField] private List<int> correctCode = new List<int> { 1, 4, 2, 3 };
@@ -14,6 +18,16 @@ public class KeypadPuzzle : MonoBehaviour
 
     private List<int> currentInput = new List<int>();
     private bool isSolved = false;
+
+    
+    
+    private void Awake()
+    {
+        if (keyObject != null)
+        {
+            keyObject.SetActive(false);
+        }
+    }
 
     public void PressButton(int buttonNumber)
     {
@@ -49,5 +63,7 @@ public class KeypadPuzzle : MonoBehaviour
             // Activate or reveal the key
             keyObject.SetActive(true);
         }
+
+        coinText.text = "Solved! Go look in the previous room for the key!";
     }
 }

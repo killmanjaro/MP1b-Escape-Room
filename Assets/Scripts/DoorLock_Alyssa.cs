@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class DoorLock : MonoBehaviour
+public class DoorLock_Alyssa : MonoBehaviour
 {
     public Animator doorAnimator;
     private bool isUnlocked = false;
