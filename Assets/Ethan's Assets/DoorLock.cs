@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DoorLock : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class DoorLock : MonoBehaviour
     [SerializeField] private string keyTag = "Key";
     [SerializeField] private float openAngle = 90f;
     [SerializeField] private float openSpeed = 2f;
+    [SerializeField] private string nextSceneName;
+    [SerializeField] private float delayBeforeTransition = 1.5f;
 
     private bool isUnlocked = false;
 
@@ -15,7 +18,7 @@ public class DoorLock : MonoBehaviour
         if (isUnlocked || !other.CompareTag(keyTag)) return;
 
         isUnlocked = true;
-        Destroy(other.gameObject); // Destroy the key
+        Destroy(other.gameObject);
         StartCoroutine(RotateDoorOpen());
     }
 
@@ -32,6 +35,17 @@ public class DoorLock : MonoBehaviour
             float easedProgress = Mathf.SmoothStep(0f, 1f, progress);
             doorHinge.rotation = Quaternion.Slerp(startRotation, targetRotation, easedProgress);
             yield return null;
+        }
+
+        yield return new WaitForSeconds(delayBeforeTransition);
+        LoadNextScene();
+    }
+
+    private void LoadNextScene()
+    {
+        if (!string.IsNullOrEmpty(nextSceneName))
+        {
+            SceneManager.LoadScene(nextSceneName);
         }
     }
 }

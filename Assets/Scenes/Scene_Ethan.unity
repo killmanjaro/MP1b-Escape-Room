@@ -17055,6 +17055,14 @@ PrefabInstance:
       propertyPath: openAngle
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 7903291478094433693, guid: b32d959803753d34b9096964a3e0d333, type: 3}
+      propertyPath: nextSceneName
+      value: Scene_Alyssa
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903291478094433693, guid: b32d959803753d34b9096964a3e0d333, type: 3}
+      propertyPath: delayBeforeTransition
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -482,7 +482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14c556ec31cd0314bbe7ac0b3a582378, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartGame
-  roomSceneName: Scene_Alyssa
+  roomSceneName: Scene_Ethan
 --- !u!1 &1428872111
 GameObject:
   m_ObjectHideFlags: 0
