@@ -19,6 +19,8 @@ public class KeypadPuzzle : MonoBehaviour
     private List<int> currentInput = new List<int>();
     private bool isSolved = false;
 
+    public AudioSource keySound;
+
     
     
     private void Awake()
@@ -65,5 +67,6 @@ public class KeypadPuzzle : MonoBehaviour
         }
 
         coinText.text = "Solved! Go look in the previous room for the key!";
+        keySound.Play();
     }
 }
