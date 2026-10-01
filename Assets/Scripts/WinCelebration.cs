@@ -2,31 +2,20 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-/// <summary>
-/// Win Celebration: when the game is won, at least two objects change
-/// appearance (lights recolor, door slides open, optional confetti)
-/// and a "You Win" message appears in front of the player.
-///
-/// Standalone: leave "Trigger When All Locks Solved" ON.
-/// Integrated: turn it OFF and call WinCelebration.Instance.Celebrate()
-/// from the final lock in the last scene.
-/// </summary>
+
 public class WinCelebration : MonoBehaviour
 {
     public static WinCelebration Instance;
 
-    [Header("Trigger")]
     public bool triggerWhenAllLocksSolved = true;
 
     [Header("Change 1: lights recolor")]
     public Light[] lights;
     public Color winLightColor = new Color(1f, 0.85f, 0.3f);
 
-    [Header("Change 2: door slides open")]
     public Transform door;
     public Vector3 doorOpenOffset = new Vector3(0f, 0f, 1.5f); // local units
 
-    [Header("Extras (optional)")]
     public ParticleSystem confetti;
     public UnityEvent onWin;
 

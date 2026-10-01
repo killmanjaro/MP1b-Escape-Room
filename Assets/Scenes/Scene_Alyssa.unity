@@ -13460,7 +13460,7 @@ MonoBehaviour:
   scoreboardText: {fileID: 862415811}
   totalLocks: 3
   totalKeys: 3
-  nextSceneName: Scene_Win
+  nextSceneName: Scene_Brian
 --- !u!4 &1101814875
 Transform:
   m_ObjectHideFlags: 0

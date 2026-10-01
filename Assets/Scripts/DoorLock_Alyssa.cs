@@ -9,8 +9,6 @@ public class DoorLock_Alyssa : MonoBehaviour
 
     void Update()
     {
-        // TEMP: debug trigger for testing without VR
-        // (null check: there is no keyboard on a headset build)
         if (Keyboard.current != null && Keyboard.current.lKey.wasPressedThisFrame)
         {
             Debug.Log("L WAS PRESSED");
