@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EndSequence : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class EndSequence : MonoBehaviour
     [SerializeField] float fadeDuration = 0.4f;
     [SerializeField] float pauseBeforeBreak = 2f;
     [SerializeField] float pauseBeforeMessage = 2f;
+
+    [SerializeField] string nextSceneName = "Scene_Win";
 
     Material fadeMat;
     bool started;
@@ -60,6 +63,9 @@ public class EndSequence : MonoBehaviour
         yield return new WaitForSeconds(pauseBeforeMessage);
 
         if (winMessage != null) winMessage.SetActive(true);
+
+        if (!string.IsNullOrEmpty(nextSceneName))
+            SceneManager.LoadScene(nextSceneName);
     }
 
     IEnumerator Knock(float volume)
